@@ -123,8 +123,6 @@ img {
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-  border: 0 none;
   table-layout: fixed;
   width: 100%;
 }
@@ -168,7 +166,8 @@ a {
   padding: 10px;
 }
 
-/* 비장애인들한테는 보일 필요가 없는 컨텐츠이지만, 장애인들한테는 인식돼야 할 컨텐츠에 붙이는 클래스 */
+/* 비장애인들한테는 보일 필요가 없는 컨텐츠이지만,
+ 장애인들한테는 인식돼야 할 컨텐츠에 붙이는 클래스 */
 .blind {
   font-size: 0;
   width: 0;
@@ -195,3 +194,7 @@ legend {
   display: block;
   clear: both;
 }
+
+body {font-family: "Malgun Gothic","맑은 고딕","sans-serif";
+font-size: 16px; color: #444;}
+.row {max-width: 1050px; margin: 0 auto;}
