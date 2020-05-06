@@ -196,7 +196,7 @@ legend {
 }
 
 body {font-family: "Malgun Gothic","맑은 고딕","sans-serif";
-font-size: 16px; color: #444;}
+font-size: 16px; color: #444; letter-spacing: -1px;}
 .row {max-width: 1050px; margin: 0 auto;}
 
 #wrap {position: relative;}
@@ -248,3 +248,51 @@ letter-spacing: 8.8px; margin-top: 23px;}
 .slide .text p:nth-child(3) {font-size: 20px; letter-spacing: 3px;
 position: relative; top: 150px;}
 .slide2, .slide3 {display: none;}
+
+/*다시 찾는 인기여행지top3*/
+.about_area h2 {padding: 55px 0px 105px; text-align: center;
+font-size: 40px;}
+.about_box {background: #f4f0e9;}
+.place_list li {float: left; width: 32%; position:relative;
+top:-50px; text-align: center;} 
+.place_list li:nth-child(2) {margin: 0 2%;}
+/*:nth-child(n), :last-child는 :first-child에 비해
+호환성이 낮음*/
+.place_list li h3 {font-weight: bold; font-size: 18px;
+padding-top: 25px; color: #000;}
+.place_list li .txt {color: #666; padding: 10px 30px 0px; 
+  line-height: 1.8; }
+.place_list li .view {border-top: 2px solid #333; color: #666;
+display: inline-block; margin-top: 20px; padding-top: 5px;} 
+.place_list li img:hover {opacity: 0.6;}
+
+.dgbox {background:url(../img/mainslide03.jpg) no-repeat;
+height:200px; background-size:cover; background-attachment:fixed;
+position: relative;}
+.dgbox .text {position: absolute; top: 50%; left: 50%;
+transform: translate(-50%,-50%); color: #fff; text-align:center;}
+.dgbox .text p:nth-child(1) {font-size: 20px;}
+.dgbox .text p:nth-child(2) {font-size: 30px; padding-top: 10px;
+line-height: 1.2;}
+
+/*상담신청 및 notice*/
+.appbbs_area {padding: 60px 0px;}
+.appbbs_box .app_line {float: left; width: 66%; padding: 45px 0px;
+text-align: center; background: url(../img/bg_app.jpg) no-repeat;}
+
+.app_line a {display: inline-block; width: 42.4%; height: 100px;
+line-height: 100px; padding-left: 75px; text-align:left;
+background: rgba(0,0,0,0.3) url(../img/ico_katalk.png) no-repeat 20px 50%;
+border: 2px solid #fff; margin-right:10px; font-size: 26px;
+color: #fff;}
+.app_line a:nth-child(2) 
+{background-image: url(../img/ico_phone.png); padding-left: 85px;}
+
+.appbbs_box .bbs_line {float: right; width: 30%;}
+.bbs_line h3 {font-size: 26px; padding-bottom: 10px;}
+.bbs_line .notice_recent li {padding: 8px 0px;}
+.bbs_line .notice_recent li a{padding-left: 14px; display: block;
+background: url(../img/ico_bullet.png) no-repeat 0 50%; 
+overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+footer {border-top: 1px solid #ddd;}
