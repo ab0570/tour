@@ -296,3 +296,25 @@ background: url(../img/ico_bullet.png) no-repeat 0 50%;
 overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 
 footer {border-top: 1px solid #ddd;}
+.foot_list li {display: inline-block; margin-top:25px; 
+  font-weight:bold; font-size: 15px;}
+.foot_list li:first-child:after {content: "|"; display: inline-block;
+padding: 0 10px; font-size: 10px; color: #000; position: relative;
+ top: -2px; left: 2px;}
+.foot_area h2 {padding-top: 25px; font-size: 14px; color: #666;}
+.foot_area .addr {padding-top: 5px; line-height: 1.4;color: #666;
+font-size: 13px;}
+.foot_area .copy {padding-top: 3px; font-size: 13px; color: #666;
+letter-spacing: 0;}
+
+.foot_area {position: relative; padding-bottom: 40px;}
+.snslink {position: absolute; top: 0; right: 0;}
+.snslink li {display:inline-block; margin: 30px 10px;}
+.snslink li a {display: block; width: 50px; height: 50px;
+background: url(../img/sprite.png) no-repeat;
+background-position:0 0; text-indent: -9999px;
+overflow: hidden;}
+.snslink li+li a {background-position:-50px 0;}
+.snslink li+li+li a {background-position:-100px 0;}
+
+.quick_area {position: fixed; right:0; top: 50%;}
