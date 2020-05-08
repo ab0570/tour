@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+@media screen and (max-width:1049px) {
+    
+    #header h1 {float: left; padding: 45px 0 0 20px;}
+
+        #header .header_cont {float: right; width: 50%;}
+        
+        
+        .depth1 {text-align: right; border: 0px solid #000;}
+        .depth1 > li {display: inline-block; padding: 30px 20px 43px; 
+        color: #fff; font-size: 18px;} 
+        .depth1 >li:last-child {padding-right: 0;}
+        .dep2box {position: absolute; top:116px; left: 0; width:100%; text-align:left;
+          background:rgba(250,100,0,0.85); z-index: 100; display: none;}
+          .depth1 > li:hover .dep2box {display: block;}
+          .depth2 > li {display: inline-block; padding: 20px;}
+        .depth1 > li:nth-child(1) .depth2,
+        .depth1 > li:nth-child(2) .depth2,
+        .depth1 > li:nth-child(3) .depth2,
+        .depth1 > li:nth-child(4) .depth2 {padding-left: 53%;}
+        
+        .depth1 > li:nth-child(4) .depth2 > li {padding-right: 0;}
+}
+
+@media screen and (max-width:799px) {
+    #header {background: rgba(0,0,0,0.5); color: #fff; height: 90px;
+        position:fixed; width: 100%; top:0; left:0; z-index: 99999;}
+        #header h1 {float:none; padding: 30px 0 0; text-align: center;}
+        #header h1 a {background: url(../img/logo.png) no-repeat; 
+        display:inline-block; width: 180px; height: 23px;
+        background-size: contain;
+        text-indent: -9999px; overflow: hidden;}
+
+    #header .header_cont {display: none;}
+        .util {text-align: right; }
+        .util > li {display: inline-block; font-size: 14px; color: #eee;
+        padding:10px 0px 0px 20px;}
+        .util li:after {content: "｜" ; display: inline-block; 
+        font-size: 10px; color: #eee; position: relative;
+        left:10px; top:-2px;}
+        .util > li:last-child:after {display: none;}
+
+        .depth1 {text-align: right; }
+        .depth1 > li {display: inline-block; padding: 30px 20px 43px; 
+        color: #fff; font-size: 18px;} 
+        .depth1 >li:last-child {padding-right: 0;}
+        .dep2box {position: absolute; top:116px; left: 0; width:100%; text-align:left;
+          background:rgba(250,100,0,0.85); z-index: 100; display: none;}
+          .depth1 > li:hover .dep2box {display: block;}
+          .depth2 > li {display: inline-block; padding: 20px;}
+        .depth1 > li:nth-child(1) .depth2,
+        .depth1 > li:nth-child(2) .depth2,
+        .depth1 > li:nth-child(3) .depth2,
+        .depth1 > li:nth-child(4) .depth2 {padding-left: 53%;}
+        .depth1 > li:nth-child(4) .depth2 > li {padding-right: 0;}
+
+}
