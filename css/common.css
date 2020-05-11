@@ -199,7 +199,7 @@ body {font-family: "Malgun Gothic","맑은 고딕","sans-serif";
 font-size: 16px; color: #444; letter-spacing: -1px;}
 .row {max-width: 1050px; margin: 0 auto;}
 
-.openMOgnb {display: none;}
+.openMOgnb, .closeMOgnb {display: none;}
 #wrap {position: relative;}
 #header {background: rgba(0,0,0,0.5); color: #fff; height: 116px;
 position:fixed; width: 100%; top:0; left:0; z-index: 99999;}
