@@ -42,6 +42,19 @@
     .to_top a:before {content: "▲"; display: block; font-size: 12px;
     color: #fff; position: absolute; top: -10px; left: 50%;
     margin-left: -6px;}
+   
+    /*상담신청 및 notice*/
+   .appbbs_area {padding: 60px 0px;}
+   .appbbs_box .app_line {float: left; width: 66%; padding: 45px 0px;
+   text-align: center; background: url(../img/bg_app.jpg) no-repeat;}
+   .app_line a {display: inline-block; width: 42.4%; height: 100px;
+   line-height: 100px; padding-left: 75px; text-align:left;
+   background: rgba(0,0,0,0.3) url(../img/ico_katalk.png) no-repeat 20px 50%;
+   border: 2px solid #fff; margin-right:10px; font-size: 16px;
+   color: #fff;}
+   .app_line a:nth-child(2) 
+   {background-image: url(../img/ico_phone.png); padding-left: 85px;}
+   .appbbs_box .bbs_line {float: right; width: 30%;}
 
 }
 
@@ -120,7 +133,7 @@
     letter-spacing: 0px; text-shadow: 2px 2px 5px #555; 
     border-bottom: 0.5px solid #999; padding-bottom: 10px;}
     .slide .text p:nth-child(2) {font-size: 16px; font-weight: normal;
-    letter-spacing: 0px; margin-top: 23px;
+    letter-spacing: 0px; margin-top: 23px;}
 
     .quick_area {position: fixed; right:20px; top:80%;
     margin-top:0px; width: 45px; z-index: 999999;}
@@ -129,13 +142,28 @@
     left: 0; width: 100%;}
     .quick_list li {text-align: center; background: #282828;
     font-size: 15px; float: left; width: 33.33%;}
-    .quick_list li a {display: block; padding: 15px 0;
+    .quick_list li a {display: block; padding:20px 0;
      border-top: 1px solid #4d4d4d; 
     border-left: 1px solid #4d4d4d;}
     .quick_list li:nth-child(1) a {border-left: none;}
     .quick_list li a h3 {padding-bottom: 0px; color: #ddd;
     letter-spacing: -2px; font-size: inherit;}
     .quick_list li p {display: none;}
+
+     /*상담신청 및 notice*/
+   .appbbs_area {padding: 0px 0px;}
+   .appbbs_box .app_line {float: none; width: 100%; padding: 45px 20px;
+   text-align: center; background: url(../img/bg_app.jpg) no-repeat;
+   background-size: cover;}
+   .app_line a {display: inline-block; width: 42.4%; height: 100px;
+   line-height: 100px; padding-left: 75px; text-align:left;
+   background: rgba(0,0,0,0.3) url(../img/ico_katalk.png) no-repeat center center;
+   border: 2px solid #fff; margin-right:2%; font-size: 0px;
+   color: #fff;}
+   .app_line a:nth-child(2) 
+   {background-image: url(../img/ico_phone.png); padding-left: 85px;}
+   .appbbs_box .bbs_line {float: none; width: 100%; padding: 20px;}
+
     
 
 }
