@@ -241,11 +241,11 @@ background-size: cover; height: 550px; background-position: center;}
 .slide3 {background-image:url(../img/mainslide03.jpg);}
 .slide .text {position: absolute; top: 50%; left: 50%; 
 transform: translate(-50%,-50%); color: #fff; text-align: center;}
-.slide .text p:nth-child(1) {font-size: 50px; font-weight: normal; 
-  letter-spacing: 5px; text-shadow: 2px 2px 5px #555; 
+.slide .text p:nth-child(1) {font-size: 45px; font-weight: normal; 
+letter-spacing: 0px; text-shadow: 2px 2px 5px #555; 
 border-bottom: 0.5px solid #999; padding-bottom: 10px;}
 .slide .text p:nth-child(2) {font-size: 20px; font-weight: normal;
-letter-spacing: 8.8px; margin-top: 23px;}
+letter-spacing: 6px; margin-top: 23px;}
 .slide .text p:nth-child(3) {font-size: 20px; letter-spacing: 3px;
 position: relative; top: 150px;}
 .slide2, .slide3 {display: none;}
@@ -258,7 +258,7 @@ font-size: 40px;}
 top:-50px; text-align: center;} 
 
 
-.place_list li:nth-child(2) {margin: 0 2%;}
+.place_list li:first-child {margin-left: 2%;}
 /*:nth-child(n), :last-child는 :first-child에 비해
 호환성이 낮음*/
 .place_list li h3 {font-weight: bold; font-size: 18px;
