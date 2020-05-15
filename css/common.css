@@ -107,6 +107,7 @@ legend {
   display: none
 }
 fieldset {border: none;}
+input,select {vertical-align: middle;}
 
 /* 자식들이 float 속성을 가질때 부모의 높이가 무너지므로 .cf로 해결함 */
 .cf:after,
