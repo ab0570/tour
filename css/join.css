@@ -39,3 +39,9 @@ font-family: 'Malgun Gothic','맑은 고딕',sans-serif;
 letter-spacing: -1px; color: #444; padding:10px;
 line-height: 1.5em;}
 /*textarea는 글꼴 관련 스타일을 상위태그에서 상속받지 못함*/
+.join_form .btn {text-align: center; margin-top: 20px;}
+.join_form .btn input {width: 80px; height: 50px; 
+background: #000; color: #fff; border: none; font-size:20px;
+border-radius: 5px; margin:0 10px;} 
+.join_form .btn input [type='reset'] {background: #555;}
+.join_form .btn input:hover {background: #f00;}
