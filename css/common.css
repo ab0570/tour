@@ -189,10 +189,10 @@ position: relative; top: 150px;}
 font-size: 40px;}
 .about_box {background: #f4f0e9;}
 .place_list li {float: left; width: 32%; position:relative;
-top:-50px; text-align: center;} 
+top:-50px; text-align: center; margin-left: 2%;} 
 
 
-.place_list li:first-child {margin-left: 2%;}
+.place_list li:first-child {margin-left: 0%;}
 /*:nth-child(n), :last-child는 :first-child에 비해
 호환성이 낮음*/
 .place_list li h3 {font-weight: bold; font-size: 18px;
