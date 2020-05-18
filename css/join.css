@@ -45,3 +45,8 @@ background: #000; color: #fff; border: none; font-size:20px;
 border-radius: 5px; margin:0 10px;} 
 .join_form .btn input [type='reset'] {background: #555;}
 .join_form .btn input:hover {background: #f00;}
+.join_form .radio_area,
+.join_form .hobby_area {height: 45px; line-height: 45px;}
+.join_form .radio_area label,
+.join_form .hobby_area label {padding-right: 15px; font-size: 15px;
+color: #444;}
