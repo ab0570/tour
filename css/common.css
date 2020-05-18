@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 /* reset element */
 
 * {
@@ -108,6 +109,14 @@ legend {
 }
 fieldset {border: none;}
 input,select {vertical-align: middle;}
+select {-webkit-appearance: none; appearance: none;
+background: url(../img/ico_selectArr.png) no-repeat 100% 50%;}
+
+input[type='radio'],
+input[type='checkbox'] {
+  -webkit-appearance: none; appearance: none;}
+
+
 input[type='submit']:hover,
 input[type='reset']:hover,
 button:hover {cursor:pointer;}
