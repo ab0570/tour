@@ -158,7 +158,7 @@ color: #fff; font-size: 18px;}
 .depth1 >li:last-child {padding-right: 0;}
 .dep2box {position: absolute; top:116px; left: 0; width:100%; text-align:left;
   background:rgba(250,100,0,0.85); z-index: 100; display: none;}
-  .depth1 > li:hover .dep2box {display: block;}
+  /* .depth1 > li:hover .dep2box {display: block;} */
   .depth2 > li {display: inline-block; padding: 20px;}
 .depth1 > li:nth-child(1) .depth2 {padding-left: 450px;}
 .depth1 > li:nth-child(2) .depth2 {padding-left: 550px;}
