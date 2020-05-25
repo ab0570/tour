@@ -11,7 +11,7 @@
     .depth1 >li:last-child {padding-right: 0;}
     .dep2box {position: absolute; top:116px; left: 0; width:100%; text-align:left;
     background:rgba(250,100,0,0.85); z-index: 100; display: none;}
-    .depth1 > li:hover .dep2box {display: block;}
+    /* .depth1 > li:hover .dep2box {display: block;} */
     .depth2 > li {display: inline-block; padding: 20px;}
     .depth1 > li:nth-child(1) .depth2,
     .depth1 > li:nth-child(2) .depth2,
@@ -130,7 +130,7 @@
     .depth1 > li:nth-child(3) > a {background-image: url(../img/ico_gnb03.png);}
     .depth1 > li:nth-child(4) > a {background-image: url(../img/ico_gnb04.png);}
     .depth1 >li:last-child {padding-right: 0;}
-    .depth1 > li:hover .dep2box {display:block}
+    /* .depth1 > li:hover .dep2box {display:block} */
     
     .slide .text p:nth-child(1) {font-size: 30px; font-weight: normal; 
     letter-spacing: 0px; text-shadow: 2px 2px 5px #555; 
