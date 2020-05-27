@@ -133,6 +133,11 @@ body {font-family: "Malgun Gothic","맑은 고딕","sans-serif";
 font-size: 16px; color: #444; letter-spacing: -1px;}
 .row {max-width: 1050px; margin: 0 auto;}
 
+.loadingAni{position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+background: #000; color: #fff; font-size: 80px; z-index: 99999999;}
+.loadingAni i {position: absolute; top: 50%; left: 50%; 
+  transform: translate(-50%,-50%);}
+
 .openMOgnb, .closeMOgnb {display: none;}
 #wrap {position: relative;}
 #header {background: rgba(0,0,0,0.5); color: #fff; height: 116px;

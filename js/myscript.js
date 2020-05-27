@@ -31,6 +31,7 @@ $(window).resize(function(){
 })
 
 $(window).load(function(){
+   $('.loadingAni').delay(1000).fadeOut(500)
    init()
 })
 
