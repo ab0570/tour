@@ -221,6 +221,19 @@ transform: translate(-50%,-50%); opacity: 0; transition: all 0.4s 0.3s;
 z-index: 99999;}
 .place_list li .imgbox:hover:before {opacity: 1;}
 
+.popupBox {display: none;}
+.popupBox.on {
+  display: block; position: absolute; top: 0; left: 0; right: 0;
+  bottom: 0; background: rgba(0,0,0,0.7); z-index: 9999999;}
+  .popupBox.on .inner {position: absolute; top: 520px; left: 50%;
+  transform: translate(-50%);background: #fff; text-align:center;
+padding: 20px;}
+.popupBox.on h3 {font-size: 30px; font-weight: bold; padding: 20px;}
+.popupBox.on p {font-size: 20px; padding: 20px 0px; width:80%;
+margin: 0 auto; line-height: 1.5;}
+.popupBox.on button {font-size: 50px; color: #fff; position: absolute;
+top: -45px; right: -45px; background: none; border: none;}
+
 .dgbox {background:url(../img/mainslide03.jpg) no-repeat;
 height:200px; background-size:cover; background-attachment:fixed;
 position: relative;}
