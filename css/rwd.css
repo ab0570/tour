@@ -190,3 +190,9 @@
    .snslink li+li+li a {background-position:-100px 0;}
 
 }
+
+@media screen and (max-width:500px) {
+  .popupBox.on button {font-size: 40px; color: #fff; position: absolute;
+    top: -35px; right: -35px; background: none; border: none;}
+    
+}

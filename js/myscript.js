@@ -15,8 +15,9 @@ $('.to_top').on('click',function(){
    $('body,html').animate({scrollTop:'0px'},600)
 })
 
+var winWidth
 function init(){
-   var winWidth =$(window).width()
+   winWidth =$(window).width()
    if (winWidth > 799) {
       $('#header').removeClass('on')
       $('html').addClass('minTb').removeClass('mobile')
@@ -69,10 +70,20 @@ $('.place_list>li>a').on('click',function(e){
     var info = $(this).find('p').text()
     var alt = $(this).find('img').attr('alt')
    $('.popupBox').addClass('on')
+   if(winWidth <= 799) {
+      var litop = $(this).parent().offset().top;
+      $('.popupBox .inner').css({
+         top:litop,
+         width:'80%',
+         left:'0%',
+         transform:'translate(0%)',
+         margin:'0 10%'
+      })
+   }
    $('.popupBox .inner h3').text(text)
    $('.popupBox .inner p').text(info)
    $('.popupBox .inner div a').attr('href',href)
-   $('.popupBox .inner div img').attr('src',src).attr('alt',alt)
+   $('.popupBox .inner div img').attr('src',src).attr('alt',alt).attr('width','100%')
 })
 
 $('.popupBox button').on('click',function(){
