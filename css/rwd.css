@@ -63,8 +63,8 @@
 
 @media screen and (max-width:799px) {
 
-    .dgbox .text p:nth-child(1) {font-size: 16px;}
-    .dgbox .text p:nth-child(2) {font-size: 20px; padding-top: 10px;
+  .dgbox .text p:nth-child(1) {font-size: 16px;}
+  .dgbox .text p:nth-child(2) {font-size: 20px; padding-top: 10px;
     line-height: 1.2;}
 
 /*다시 찾는 인기여행지top3*/
