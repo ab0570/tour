@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 /* reset element */
 
 * {
@@ -8,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+*:focus {outline: none;}
 
 h1,
 h2,
@@ -188,6 +188,7 @@ letter-spacing: 6px; margin-top: 23px;}
 .slide .text p:nth-child(3) {font-size: 20px; letter-spacing: 3px;
 position: relative; top: 150px;}
 /* .slide2, .slide3 {display: none;} */
+
 .main_rolling_pc {position: relative;}
 .marrow {position: absolute; top: 50%; transform: translateY(-50%);
 background: none; border: none; font-size: 60px; color: #fff;}
