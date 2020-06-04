@@ -286,9 +286,13 @@ transform: translate(-50%,-50%); color: #fff; text-align:center;}
 line-height: 1.2;}
 
 /*상담신청 및 notice*/
+.appbbs_box {overflow: hidden;}
 .appbbs_area {padding: 60px 0px;}
 .appbbs_box .app_line {float: left; width: 66%; padding: 45px 0px;
-text-align: center; background: url(../img/bg_app.jpg) no-repeat;}
+text-align: center; background: url(../img/bg_app.jpg) no-repeat;
+-webkit-transform: translate3d(-200%, 0, 0);
+transform: translate3d(-200%, 0, 0);}
+.appbbs_box.on .bbs_line {animation: fadeInLeft 1s both 0.5s;}
 
 .app_line a {display: inline-block; width: 42.4%; height: 100px;
 line-height: 100px; padding-left: 75px; text-align:left;
@@ -298,7 +302,10 @@ color: #fff;}
 .app_line a:nth-child(2) 
 {background-image: url(../img/ico_phone.png); padding-left: 85px;}
 
-.appbbs_box .bbs_line {float: right; width: 30%;}
+.appbbs_box.on .bbs_line {animation: fadeInRight 1s both 0.5s;}
+.bbs_line {-webkit-transform: translate3d(200%, 0, 0);
+  transform: translate3d(200%, 0, 0); float: right; width: 30%;}
+
 .bbs_line h3 {font-size: 26px; padding-bottom: 10px;}
 .bbs_line .notice_recent li {padding: 8px 0px;}
 .bbs_line .notice_recent li a{padding-left: 14px; display: block;

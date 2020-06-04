@@ -9,6 +9,12 @@ $(window).scroll(function(){
    } else {
          $('.to_top').show()
    }
+
+   if(sct > 1000) {
+      $('.appbbs_box').addClass('on')
+   } else {
+      $('.appbbs_box').removeClass('on')
+   }
 })
 
 $('.to_top').on('click',function(){
