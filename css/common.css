@@ -226,8 +226,11 @@ background: none; border: none; font-size: 50px; color: #999;}
 .multi_rolling .slick-dots li.slick-active button
  {background: #000;}
 .multi_rolling .slick-slide {opacity: 0.6; transform:scale(0.85);transition: all 0.5s;}
+/*슬릭슬라이더 안에 있는 모든 슬라이드*/
 .multi_rolling .slick-slide.slick-active {opacity: 1; }
+/*무대공간에 보여지는 슬라이드 slidesToShow*/
 .multi_rolling .slick-slide.slick-active.slick-current {transform:scale(1)}
+/*무대중에서 센터로 보이는 슬라이드*/
 
 
 /*다시 찾는 인기여행지top3*/
