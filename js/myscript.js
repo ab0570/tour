@@ -134,7 +134,9 @@ $('.multi_visual').slick({
    autoplaySpeed:3000, // 슬라이드 지연시간
    dots:true, // 기본값 false,슬라이드 번호버튼
    speed:600, // 슬라이드 동작시간
-   slidesToShow:4, //보여지는 슬라이드 수
+   centerMode:true, 
+   centerPadding:'80px', //기본값50
+   slidesToShow:3, //보여지는 슬라이드 수
    slidesToScroll:1, // 넘어가는 슬라이드수
    pauseOnHover:false, // 슬라이드위에 마우스오버시 슬라이드멈춤여부
    pauseOnDotsHover:true, // 슬라이드 번호버튼위에 마우스오버시 멈춤여부
@@ -145,4 +147,12 @@ $('.multi_visual').slick({
    arrows:true, // 기본값은 true고, 슬라이즈 좌우측 방향버튼
    prevArrow: '<button class="prevArrow marrow"><i class="fas fa-angle-left"></i></button>',
    nextArrow: '<button class="nextArrow marrow"><i class="fas fa-angle-right"></i></button>',
+   responsive:[{
+      breakpoint:800,
+      settings:{
+         centerMode:true, 
+         centerPadding:'100px', 
+         slidesToShow:1, //보여질슬라이드수
+      }
+   }]
 })
