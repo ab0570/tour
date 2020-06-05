@@ -67,9 +67,10 @@ $('#header .openMOgnb').on('click',function(){
 $('#header .closeMOgnb').on('click',function(){
    $(this).parents('#header').removeClass('on')
 })
-
+var lieq; //전역변수
 $('.place_list>li>a').on('click',function(e){
     e.preventDefault();
+    lieq = $(this).parent().index()
     var href = $(this).attr('href')
     var src = $(this).attr('data-src')
     var text = $(this).find('h3').text()
@@ -92,8 +93,12 @@ $('.place_list>li>a').on('click',function(e){
    $('.popupBox .inner div img').attr('src',src).attr('alt',alt).attr('width','100%')
 })
 
-$('.popupBox button').on('click',function(){
+$('.popupBox button.close').on('click',function(){
      $(this).parents('.popupBox').removeClass('on')
+})
+
+$('.popupBox button.prev').on('.click',function(){
+   
 })
 
 $('.visualRoll').slick({

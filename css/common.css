@@ -199,15 +199,31 @@ position: relative; top: 150px;}
 background: none; border: none; font-size: 60px; color: #fff;}
 .main_rolling_pc .prevArrow {left: 30px; z-index: 999999;}
 .main_rolling_pc .nextArrow {right: 30px;}
-.main_rolling_pc .slick-dots {position: absolute; bottom: 20px; width:calc(50% + 30px);
+
+/*번호버튼 타입1*/
+/* .main_rolling_pc .slick-dots {position: absolute; bottom: 20px; width:calc(50% + 30px);
 text-align: right;}
 .main_rolling_pc .slick-dots li {display: inline-block;}
 .main_rolling_pc .slick-dots li button {width: 15px; height: 15px; background: #fff;
 border:none; text-indent: -99999px; overflow: hidden; border-radius: 50%;
 margin: 0 5px;}
-.main_rolling_pc .slick-dots li.slick-active button {width: 30px; border-radius: 50px;}
+.main_rolling_pc .slick-dots li.slick-active button {width: 30px; border-radius: 50px;} */
+
+/*번호버튼 애니메이션 타입*/
+.main_rolling_pc .slick-dots {position: absolute; bottom: 20px; width:60%;
+  text-align: right;}
+.main_rolling_pc .slick-dots li {display: inline-block; width: 114px; height: 2px;
+background: #999; margin: 0 5px; position: relative;}
+.main_rolling_pc .slick-dots li button {background: #fff; width: 0; height: 2px;
+border:none; text-indent: -99999px; overflow: hidden; border-radius: 1px;
+position: absolute; top: 0; left: 0;}
+.main_rolling_pc .slick-dots li.slick-active button {animation: lineani 3s both }
+@keyframes lineani {
+0% {width: 0px;}
+100% {width: 100%;}
+}
 .main_rolling_pc .plpa {position: absolute; bottom: 19px; background: none; border: none;
-font-size: 15px; color: #fff; right: 0; width: calc(50% - 30px);
+font-size: 15px; color: #fff; right: 0; width:40%;
  text-align: left; padding-left: 10px;}
 
 .multi_rolling {padding:50px 30px; position: relative;}
@@ -273,8 +289,13 @@ padding: 20px;}
 .popupBox.on h3 {font-size: 30px; font-weight: bold; padding: 20px;}
 .popupBox.on p {font-size: 20px; padding: 20px 0px; width:80%;
 margin: 0 auto; line-height: 1.5;}
-.popupBox.on button {font-size: 50px; color: #fff; position: absolute;
+.popupBox.on button.close {font-size: 50px; color: #fff; position: absolute;
 top: -45px; right: -45px; background: none; border: none;}
+.popupBox.on button.arrow {font-size: 70px; color: #fff; position: absolute;
+top: 50%; transform: translateY(-50%);background: none; border: none;}
+.popupBox.on button.prev {left: -80px;}
+.popupBox.on button.next {right:-80px;}
+
 
 .dgbox {background:url(../img/mainslide03.jpg) no-repeat;
 height:200px; background-size:cover; background-attachment:fixed;
