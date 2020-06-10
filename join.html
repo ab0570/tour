@@ -160,7 +160,8 @@
 						<label for="" class="tit_lbl">문의내용</label>
 						<div class="app_content">
 							<textarea name="query" id="query" placeholder="간단한 상담 요청 사항을 남겨주시면 보다 상세한 상담이 가능합니다.
-전화상담 희망시 기재 부탁드립니다"></textarea>
+전화상담 희망시 기재 부탁드립니다. (20글자 이내)" maxlength="20"></textarea>
+                            <p>남은글자 : <span>20</span>글자</p>
 						</div>
 					</li>
                   </ul>
@@ -225,6 +226,12 @@
 				   $('#edomain').val('').attr({disabled:false})
 			 }
 		 })
+	  })
+	  var maxlen = $('#query').attr('maxlength')
+	  $('#query').keydown(function(){
+		  var current = $(this).val().length
+		  var remain = maxlen-current
+		  $('.app_content p span').text(remain)
 	  })
 	</script>
 </body>
