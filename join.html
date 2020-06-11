@@ -137,6 +137,12 @@
                         </div>
 					</li>
 					<li class="cf">
+                        <label for="birth" class="tit_lbl pilsoo_item">생년월일</label>
+                        <div class="app_content">
+                            <input type="text" id="birth" name="birth">
+                        </div>
+					</li>
+					<li class="cf">
                         <label class="tit_lbl">성별</label>
                         <div class="app_content radio_area">
 							<input type="radio" id="male" name="gender"> 
@@ -148,6 +154,8 @@
 					<li class="cf">
                         <label class="tit_lbl">취미</label>
                         <div class="app_content hobby_area">
+							<input type="checkbox" id="allchek" name="allchek">
+							<label for="allchek">전체선택</label>
 							<input type="checkbox" id="hobby1" name="hobby1">
 							<label for="hobby1">음악감상</label>
 							<input type="checkbox" id="hobby2" name="hobby2">
@@ -232,6 +240,11 @@
 		  var current = $(this).val().length
 		  var remain = maxlen-current
 		  $('.app_content p span').text(remain)
+	  })
+
+	  $('#allchek').on('click',function(){
+		  var bool = $(this).prop('checked')
+            $(".hobby_area input[name^='hobby']").prop('checked',bool);
 	  })
 	</script>
 </body>

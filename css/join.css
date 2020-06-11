@@ -34,7 +34,8 @@ font-size: 17px; letter-spacing: -2px; line-height: 45px;}
 }
 .join_form #email_lbl,
 .join_form #edomain,
-.join_form #edomain_opt {width: 160px;}
+.join_form #edomain_opt,
+.join_form #birth {width: 160px;}
 .join_form #query {height: 245px; font-size: 15px; 
 font-family: 'Malgun Gothic','맑은 고딕',sans-serif;
 letter-spacing: -1px; color: #444; padding:10px;
